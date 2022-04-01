@@ -32,6 +32,12 @@
 		A84CFD1127E7AE4200CA0A70 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CFD1027E7AE4200CA0A70 /* Helper.swift */; };
 		A87EDA5D27CC68140000827E /* AccueilHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87EDA5C27CC68140000827E /* AccueilHeroView.swift */; };
 		A87EDA5F27CC69690000827E /* AccueilCarousselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87EDA5E27CC69690000827E /* AccueilCarousselView.swift */; };
+		A887AFA927F77913009B0CF1 /* EquipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887AFA827F77913009B0CF1 /* EquipesViewController.swift */; };
+		A887AFAB27F77B99009B0CF1 /* EquipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887AFAA27F77B99009B0CF1 /* EquipeDetailView.swift */; };
+		A887AFAD27F77D58009B0CF1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887AFAC27F77D58009B0CF1 /* MapViewController.swift */; };
+		A887AFAF27F7841B009B0CF1 /* EquipesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887AFAE27F7841B009B0CF1 /* EquipesTableViewCell.swift */; };
+		A887AFB127F78FB6009B0CF1 /* EquipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887AFB027F78FB6009B0CF1 /* EquipeDetailViewController.swift */; };
+		A887AFB327F7A036009B0CF1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887AFB227F7A036009B0CF1 /* MapView.swift */; };
 		A89C99CB27AE03BE00ACDDFA /* CocktailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89C99CA27AE03BE00ACDDFA /* CocktailDetailViewController.swift */; };
 		A8A3AC4727D5AD27009003E5 /* Moustache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A3AC4627D5AD27009003E5 /* Moustache.swift */; };
 		A8A3AC4A27D5B600009003E5 /* MoustacheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A3AC4927D5B600009003E5 /* MoustacheView.swift */; };
@@ -75,6 +81,12 @@
 		A84CFD1027E7AE4200CA0A70 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		A87EDA5C27CC68140000827E /* AccueilHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccueilHeroView.swift; sourceTree = "<group>"; };
 		A87EDA5E27CC69690000827E /* AccueilCarousselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccueilCarousselView.swift; sourceTree = "<group>"; };
+		A887AFA827F77913009B0CF1 /* EquipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipesViewController.swift; sourceTree = "<group>"; };
+		A887AFAA27F77B99009B0CF1 /* EquipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipeDetailView.swift; sourceTree = "<group>"; };
+		A887AFAC27F77D58009B0CF1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A887AFAE27F7841B009B0CF1 /* EquipesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipesTableViewCell.swift; sourceTree = "<group>"; };
+		A887AFB027F78FB6009B0CF1 /* EquipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipeDetailViewController.swift; sourceTree = "<group>"; };
+		A887AFB227F7A036009B0CF1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A89C99CA27AE03BE00ACDDFA /* CocktailDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailViewController.swift; sourceTree = "<group>"; };
 		A8A3AC4627D5AD27009003E5 /* Moustache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moustache.swift; sourceTree = "<group>"; };
 		A8A3AC4927D5B600009003E5 /* MoustacheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoustacheView.swift; sourceTree = "<group>"; };
@@ -130,6 +142,7 @@
 				A83D275B27C989A0003CF140 /* Ingredients */,
 				A8CAB3D127E2DC3500A70A17 /* List */,
 				A8A3AC4827D5B57B009003E5 /* Moustaches */,
+				A887AFA727F778CA009B0CF1 /* Equipes */,
 				A8ADF60727ACD2E80012FAD9 /* Controller */,
 				A80CAE8127A8CD43001CF76B /* AppDelegate.swift */,
 				A80CAE8327A8CD43001CF76B /* SceneDelegate.swift */,
@@ -180,6 +193,19 @@
 				A80CAEC327A8F751001CF76B /* ChaussuresViewController.swift */,
 			);
 			path = Chaussures;
+			sourceTree = "<group>";
+		};
+		A887AFA727F778CA009B0CF1 /* Equipes */ = {
+			isa = PBXGroup;
+			children = (
+				A887AFAE27F7841B009B0CF1 /* EquipesTableViewCell.swift */,
+				A887AFA827F77913009B0CF1 /* EquipesViewController.swift */,
+				A887AFAA27F77B99009B0CF1 /* EquipeDetailView.swift */,
+				A887AFB027F78FB6009B0CF1 /* EquipeDetailViewController.swift */,
+				A887AFB227F7A036009B0CF1 /* MapView.swift */,
+				A887AFAC27F77D58009B0CF1 /* MapViewController.swift */,
+			);
+			path = Equipes;
 			sourceTree = "<group>";
 		};
 		A8A3AC4827D5B57B009003E5 /* Moustaches */ = {
@@ -317,7 +343,10 @@
 				A8D73E0027C487CE00A09C0A /* ChaussuresView.swift in Sources */,
 				A84CFD0F27E7A89F00CA0A70 /* item.swift in Sources */,
 				A8CAB3D527E2DD0500A70A17 /* AjouterView.swift in Sources */,
+				A887AFAF27F7841B009B0CF1 /* EquipesTableViewCell.swift in Sources */,
 				A80CAEC227A8F6AA001CF76B /* CocktailViewController.swift in Sources */,
+				A887AFAB27F77B99009B0CF1 /* EquipeDetailView.swift in Sources */,
+				A887AFB327F7A036009B0CF1 /* MapView.swift in Sources */,
 				A83D274A27C728CF003CF140 /* Ingredient.swift in Sources */,
 				A8DEB03D27E42B0B00F8B717 /* ListDetailView.swift in Sources */,
 				A830E26E27B776030079E362 /* Datas.swift in Sources */,
@@ -331,6 +360,8 @@
 				A830E26C27B710DE0079E362 /* CocktailDetailView.swift in Sources */,
 				A83D275527C959DF003CF140 /* IngredientDetailViewController.swift in Sources */,
 				A8A3AC4A27D5B600009003E5 /* MoustacheView.swift in Sources */,
+				A887AFAD27F77D58009B0CF1 /* MapViewController.swift in Sources */,
+				A887AFA927F77913009B0CF1 /* EquipesViewController.swift in Sources */,
 				A89C99CB27AE03BE00ACDDFA /* CocktailDetailViewController.swift in Sources */,
 				A83D274E27C73165003CF140 /* IngredientCell.swift in Sources */,
 				A8DEB03927E427E500F8B717 /* ListTableViewCell.swift in Sources */,
@@ -341,6 +372,7 @@
 				A8C42FEF27BB4EF1003208A5 /* AccueilView.swift in Sources */,
 				A8A4497127B2E26F00C352E8 /* Cocktail.swift in Sources */,
 				A8158CAE27CF1AE600D0F1C2 /* MainButtonView.swift in Sources */,
+				A887AFB127F78FB6009B0CF1 /* EquipeDetailViewController.swift in Sources */,
 				A80CAEC427A8F751001CF76B /* ChaussuresViewController.swift in Sources */,
 				A80CAE8427A8CD43001CF76B /* SceneDelegate.swift in Sources */,
 				A87EDA5F27CC69690000827E /* AccueilCarousselView.swift in Sources */,
@@ -489,7 +521,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 436Y689GFW;
+				DEVELOPMENT_TEAM = L6NB8F97G5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = cocktailApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -516,7 +548,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 436Y689GFW;
+				DEVELOPMENT_TEAM = L6NB8F97G5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = cocktailApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

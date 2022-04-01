@@ -31,7 +31,6 @@ class ListTableViewCell: UITableViewCell {
    }
 
     private func setupView() {
-
         contentView.addSubview(ingLabel)
     }
 

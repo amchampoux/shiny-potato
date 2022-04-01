@@ -24,12 +24,15 @@ class TabBar: UITabBarController {
                                    title: NSLocalizedString("Accueil", comment: ""), image: UIImage(systemName: "sun.and.horizon")!),
             createNavController(for: CocktailViewController(),
                                    title: NSLocalizedString("Cocktail", comment: ""), image: UIImage(systemName: "list.bullet.rectangle")!),
-            createNavController(for: ChaussuresViewController(),
-                                   title: NSLocalizedString("Chaussures", comment: ""), image: UIImage(systemName: "tag")!),
+            createNavController(for: EquipesViewController(),
+                                   title: NSLocalizedString("Équipes", comment: ""), image: UIImage(systemName: "sportscourt.fill")!),
             createNavController(for: ListViewController(),
                                    title: NSLocalizedString("Ma liste", comment: ""), image: UIImage(systemName: "takeoutbag.and.cup.and.straw")!),
             createNavController(for: MoustachesViewController(),
-                                   title: NSLocalizedString("Moustache", comment: ""), image: UIImage(systemName: "text.magnifyingglass")!)
+                                   title: NSLocalizedString("Moustache", comment: ""), image: UIImage(systemName: "text.magnifyingglass")!),
+            createNavController(for: ChaussuresViewController(),
+                                   title: NSLocalizedString("Chaussures", comment: ""), image: UIImage(systemName: "tag")!)
+            
         ]
     }
         
