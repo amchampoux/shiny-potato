@@ -76,7 +76,7 @@ extension IngredientsViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = IngredientDetailViewController(ingredient: Datas.get.myIngredients[indexPath.item])
-            show(vc, sender: self)
+        show(vc, sender: self)
     }
 
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

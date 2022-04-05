@@ -11,10 +11,10 @@ import PinLayout
 
 class EquipesTableViewCell: UITableViewCell {
     
+    
     let equipeLogo: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(named: "st")
-        image.contentMode = .scaleAspectFill
+        image.contentMode = .scaleAspectFit
         return image
     }()
     
@@ -25,16 +25,15 @@ class EquipesTableViewCell: UITableViewCell {
     
     let nameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Nom du Club"
         label.textAlignment = .left
         label.font = UIFont(name: "Menlo-regular", size: 15)
         label.textColor = UIColor(red: 56/256, green: 44/256, blue: 32/256, alpha: 1)
+        label.numberOfLines = 0
         return label
     }()
     
     let cityLabel: UILabel = {
         let label = UILabel()
-        label.text = "Ville"
         label.font = UIFont(name: "Helvetica", size: 12)
         label.textColor = UIColor(red: 56/256, green: 44/256, blue: 32/256, alpha: 1)
         return label
@@ -44,17 +43,18 @@ class EquipesTableViewCell: UITableViewCell {
         let map = MKMapView()
         return map
     }()
-
+    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
       super.init(coder: aDecoder)
    }
-
+    
+    
     private func setupView() {
         contentView.addSubview(equipeLogo)
         contentView.addSubview(containerView)
@@ -62,11 +62,13 @@ class EquipesTableViewCell: UITableViewCell {
         containerView.addSubview(cityLabel)
         contentView.addSubview(equipeLocation)
     }
-
+    
 
     override func prepareForReuse() {
         super.prepareForReuse()
+        equipeLogo.image = nil
         nameLabel.text = nil
+        cityLabel.text = nil
     }
 
     override func layoutSubviews() {
@@ -78,6 +80,5 @@ class EquipesTableViewCell: UITableViewCell {
         cityLabel.pin.topLeft(to: nameLabel.anchor.bottomLeft).marginTop(5).width(of: containerView).sizeToFit(.width)
 
     }
-
-
+    
 }
