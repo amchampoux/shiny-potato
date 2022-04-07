@@ -11,12 +11,6 @@ class IngredientsViewController: UIViewController {
     
     var myIngredients = [Ingredients]()
     
-//    let addButton: UIBarButtonItem = {
-//        let button = UIBarButtonItem()
-//        button.title = "Add"
-//        return button
-//    }()
-    
     var mainView: IngredientsView {
         return self.view as! IngredientsView
     }
