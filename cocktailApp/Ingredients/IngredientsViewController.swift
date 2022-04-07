@@ -11,11 +11,11 @@ class IngredientsViewController: UIViewController {
     
     var myIngredients = [Ingredients]()
     
-    let addButton: UIBarButtonItem = {
-        let button = UIBarButtonItem()
-        button.title = "Add"
-        return button
-    }()
+//    let addButton: UIBarButtonItem = {
+//        let button = UIBarButtonItem()
+//        button.title = "Add"
+//        return button
+//    }()
     
     var mainView: IngredientsView {
         return self.view as! IngredientsView
@@ -27,13 +27,34 @@ class IngredientsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let addButton = UIBarButtonItem(title: "Ajouter", style: .plain, target: self, action: #selector(self.addButttonTapped(_:)))
+        navigationItem.leftBarButtonItem = addButton
         navigationItem.rightBarButtonItem = self.editButtonItem
-        navigationItem.leftBarButtonItem = self.addButton
         
         mainView.tableView.delegate = self
         mainView.tableView.dataSource = self
         mainView.tableView.register(IngredientCell.self, forCellReuseIdentifier: IngredientCell.defaultReuseIdentifier)
+    }
+    
+    @objc func addButttonTapped(_ sender:UIBarButtonItem!) {
+        let controller = UIAlertController(
+            title: "Nouveauté!",
+            message: "Vous pouvez désormais ajouter un ingrédient à votre liste.",
+            preferredStyle: .alert)
+        
+        let action = UIAlertAction(
+            title: "Ajouter",
+            style: .default) { [self] action in
+                let vc = AjouterViewController()
+                show(vc, sender: mainView.self.action)
+            }
+        let second = UIAlertAction(
+            title: "Plus tard",
+            style: .cancel)
+        
+        controller.addAction(action)
+        controller.addAction(second)
+        present(controller, animated: true, completion: nil)
     }
 }
 

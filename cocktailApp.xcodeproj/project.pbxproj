@@ -20,6 +20,8 @@
 		A8158CB127CF22B700D0F1C2 /* SubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8158CB027CF22B700D0F1C2 /* SubtitleView.swift */; };
 		A830E26C27B710DE0079E362 /* CocktailDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830E26B27B710DE0079E362 /* CocktailDetailView.swift */; };
 		A830E26E27B776030079E362 /* Datas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A830E26D27B776030079E362 /* Datas.swift */; };
+		A831A62B27FD294600127331 /* StadiumAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A831A62A27FD294600127331 /* StadiumAnnotation.swift */; };
+		A831A62D27FD346500127331 /* StadiumAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A831A62C27FD346500127331 /* StadiumAnnotationView.swift */; };
 		A83D274A27C728CF003CF140 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D274927C728CF003CF140 /* Ingredient.swift */; };
 		A83D274C27C72A37003CF140 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D274B27C72A37003CF140 /* IngredientsViewController.swift */; };
 		A83D274E27C73165003CF140 /* IngredientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83D274D27C73165003CF140 /* IngredientCell.swift */; };
@@ -71,6 +73,8 @@
 		A8158CB027CF22B700D0F1C2 /* SubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleView.swift; sourceTree = "<group>"; };
 		A830E26B27B710DE0079E362 /* CocktailDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailView.swift; sourceTree = "<group>"; };
 		A830E26D27B776030079E362 /* Datas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datas.swift; sourceTree = "<group>"; };
+		A831A62A27FD294600127331 /* StadiumAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumAnnotation.swift; sourceTree = "<group>"; };
+		A831A62C27FD346500127331 /* StadiumAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumAnnotationView.swift; sourceTree = "<group>"; };
 		A83D274927C728CF003CF140 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		A83D274B27C72A37003CF140 /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 		A83D274D27C73165003CF140 /* IngredientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientCell.swift; sourceTree = "<group>"; };
@@ -181,8 +185,8 @@
 			children = (
 				A83D274D27C73165003CF140 /* IngredientCell.swift */,
 				A83D275827C96B48003CF140 /* IngredientsView.swift */,
-				A83D275627C95B7E003CF140 /* IngredientDetailView.swift */,
 				A83D274B27C72A37003CF140 /* IngredientsViewController.swift */,
+				A83D275627C95B7E003CF140 /* IngredientDetailView.swift */,
 				A83D275427C959DF003CF140 /* IngredientDetailViewController.swift */,
 			);
 			path = Ingredients;
@@ -205,6 +209,7 @@
 				A887AFAA27F77B99009B0CF1 /* EquipeDetailView.swift */,
 				A887AFB027F78FB6009B0CF1 /* EquipeDetailViewController.swift */,
 				A887AFB227F7A036009B0CF1 /* MapView.swift */,
+				A831A62C27FD346500127331 /* StadiumAnnotationView.swift */,
 				A887AFAC27F77D58009B0CF1 /* MapViewController.swift */,
 			);
 			path = Equipes;
@@ -230,6 +235,7 @@
 				A84CFD0E27E7A89F00CA0A70 /* item.swift */,
 				A84CFD1027E7AE4200CA0A70 /* Helper.swift */,
 				A8733C7E27FBC79F00FBEC2B /* Equipes.swift */,
+				A831A62A27FD294600127331 /* StadiumAnnotation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 				A8DEB03D27E42B0B00F8B717 /* ListDetailView.swift in Sources */,
 				A830E26E27B776030079E362 /* Datas.swift in Sources */,
 				A8DEB03B27E42AD200F8B717 /* ListDetailViewController.swift in Sources */,
+				A831A62B27FD294600127331 /* StadiumAnnotation.swift in Sources */,
 				A8158CB127CF22B700D0F1C2 /* SubtitleView.swift in Sources */,
 				A80A06D127D1BCA7004CB728 /* AccueilFlowView.swift in Sources */,
 				A83D275027C873D3003CF140 /* MoustacgesViewController.swift in Sources */,
@@ -370,6 +377,7 @@
 				A8DEB03927E427E500F8B717 /* ListTableViewCell.swift in Sources */,
 				A83D275927C96B48003CF140 /* IngredientsView.swift in Sources */,
 				A80CAE8227A8CD43001CF76B /* AppDelegate.swift in Sources */,
+				A831A62D27FD346500127331 /* StadiumAnnotationView.swift in Sources */,
 				A84CFD1127E7AE4200CA0A70 /* Helper.swift in Sources */,
 				A83D275727C95B7E003CF140 /* IngredientDetailView.swift in Sources */,
 				A8733C7F27FBC79F00FBEC2B /* Equipes.swift in Sources */,

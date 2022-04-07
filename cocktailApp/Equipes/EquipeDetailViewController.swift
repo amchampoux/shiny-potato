@@ -13,6 +13,7 @@ class EquipeDetailViewController: UIViewController {
     private let club: Club!
     private let stadium: Stadium!
     
+    
     init(club: Club, stadium: Stadium) {
         self.club = club
         self.stadium = stadium
@@ -32,7 +33,7 @@ class EquipeDetailViewController: UIViewController {
     override func loadView() {
         self.view = EquipeDetailView()
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mainView.titresLabel.text = convertArrayIntToText(club.franceChampion, "nationaux")
@@ -40,9 +41,8 @@ class EquipeDetailViewController: UIViewController {
         mainView.equipeLogo.image = UIImage(named: club.nickname)
         mainView.cityLabel.text = club.city
         mainView.descriptionLabel.text = club.desc
-        
         let coords = CLLocationCoordinate2D(latitude: club.stadium.lat, longitude: club.stadium.lon)
-        mainView.equipeLocation.setRegion(MKCoordinateRegion(center: coords, span: MKCoordinateSpan(latitudeDelta: 0.25, longitudeDelta: 0.25)), animated: true)
+        mainView.equipeLocation.setRegion(MKCoordinateRegion(center: coords, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)), animated: true)
 
     }
     

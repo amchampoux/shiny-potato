@@ -8,6 +8,7 @@
 import UIKit
 
 class IngredientsView: UIView {
+    
     let tableView = UITableView()
     
     init() {
